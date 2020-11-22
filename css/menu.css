@@ -1,0 +1,82 @@
+/*menu desktop*/
+header nav.desktop-menu ul li a{
+    margin: 10px 20px 0 0;
+    text-decoration: none;
+    padding: 1px 10px;
+    background-color: rgba(80, 80, 80, 0.6);
+    transition: .6s;
+    cursor: pointer;
+    color: white;
+    font-weight: 900;
+}
+
+nav.desktop-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav.desktop-menu ul{
+    display: flex;
+    text-align: center;
+    list-style-type: none;
+    margin-right: 50px;
+    
+}
+
+header nav.desktop-menu ul li a:hover{
+    background-color: black;
+}
+
+/*menu mobile*/
+nav#hamburguer{
+    display: none;
+}
+
+
+@media screen and (max-width: 795px){
+    nav.desktop-menu{
+        display: none;
+    }
+
+    nav#hamburguer .nav-ul{
+        display: none;
+    }
+
+    nav#hamburguer .nav-ul.show{
+        display: block;
+    }
+
+
+    nav#hamburguer{
+        cursor: pointer;
+        display: block;
+        background-image: url('../images/casa.png');
+        width: 32px;
+        height: 32px;
+        background-size: 100% 100%;
+    }
+
+
+    nav#hamburguer ul{
+        background-color: white;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50px;
+        width: 100%;
+        list-style-type: none;
+    }
+
+    nav#hamburguer ul li{
+        border: 1px solid white;
+        padding: 8px 0;
+        text-align: center;
+        background-color: rgb(66, 66, 66);
+    }
+
+    nav#hamburguer ul li a{
+        text-decoration: none;
+        color: white;
+    }
+}
