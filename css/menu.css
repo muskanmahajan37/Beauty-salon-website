@@ -2,12 +2,14 @@
 header nav.desktop-menu ul li a{
     margin: 10px 20px 0 0;
     text-decoration: none;
-    padding: 1px 10px;
+    padding: 5px 20px; 
+    border-radius: 4px; 
     background-color: rgba(80, 80, 80, 0.6);
     transition: .6s;
     cursor: pointer;
     color: white;
     font-weight: 900;
+    text-transform: uppercase;
 }
 
 nav.desktop-menu{
@@ -25,7 +27,7 @@ header nav.desktop-menu ul{
 }
 
 header nav.desktop-menu ul li a:hover{
-    background-color: black;
+    background-color: rgba(80, 80, 80, 0.8);
 }
 
 /*menu mobile*/
