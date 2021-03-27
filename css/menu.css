@@ -10,6 +10,7 @@ header nav.desktop-menu ul li a{
     color: white;
     font-weight: 900;
     text-transform: uppercase;
+    font-size: .8rem;
 }
 
 nav.desktop-menu{
