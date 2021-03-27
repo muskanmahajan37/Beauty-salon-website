@@ -2,6 +2,7 @@
     position: relative;
     width: 200px;
     height: 200px;
+    max-width: 1224px;
     transform-style: preserve-3d;
     animation: animate 40s linear infinite;
 }
