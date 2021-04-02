@@ -1,8 +1,13 @@
 let map
 function initMap(){
     map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: 40.7891, lng: -73.135},
+        center: {lat: -20.3784033, lng: -40.3686145},
         zoom: 3,
+    });
+    
+    var marker = new google.maps.Marker({
+        position: { lat: -20.3784033, lng: -40.3686145 },
+        map: map
     });
    
 }
