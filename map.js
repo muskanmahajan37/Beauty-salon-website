@@ -5,7 +5,7 @@ function initMap(){
         zoom: 3,
     });
     
-    var marker = new google.maps.Marker({
+    let marker = new google.maps.Marker({
         position: { lat: -20.3784033, lng: -40.3686145 },
         map: map
     });
