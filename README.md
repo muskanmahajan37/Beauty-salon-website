@@ -34,7 +34,7 @@ the project was developed using the following technologies
 ## Mobile Version
 
 <h1 align="center" >
-    <img src="https://ik.imagekit.io/mcvhbcq4zu/Animated_GIF-downsized_large__2__XZ2JF_nwX.gif">
+    <img src="https://ik.imagekit.io/mcvhbcq4zu/salonMobile_RpCkeyj_9.gif">
 </h1>
 
 Created by **Victor lira dev**
