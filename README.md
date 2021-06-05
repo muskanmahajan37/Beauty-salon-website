@@ -1,6 +1,6 @@
 # Beauty salon website
 <h1 align="center" >
-    <img src="https://ik.imagekit.io/mcvhbcq4zu/Animated_GIF-downsized_large_HGIKaQxa_.gif">
+    <img src="https://ik.imagekit.io/mcvhbcq4zu/salon_f7iFQjZ2e.gif">
 </h1>
 
 # Sections
