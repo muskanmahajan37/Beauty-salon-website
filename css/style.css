@@ -16,7 +16,7 @@
 }
 
 :root{
-    --bg-color: rgba(250, 162, 243, 0.5);
+    --bg-color: rgba(250, 162, 243, 0.9);
 }
 
 body{
@@ -33,6 +33,7 @@ h1{
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .section{
@@ -50,6 +51,15 @@ header{
     background-color: var(--bg-color);
     display: flex;
     justify-content: space-between;
+    position: absolute;
+    z-index: 10;
+}
+
+header.sticky{
+    position: fixed;
+    max-width: 1224px;
+    margin: 0 auto;
+    overflow-x: hidden;
 }
 
 header h1{
