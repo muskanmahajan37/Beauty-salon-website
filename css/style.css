@@ -35,6 +35,15 @@ h1{
     justify-content: space-between;
 }
 
+.section{
+    transition: transform 1s, opacity 1s;
+}
+
+.section--hidden{
+    transform: translatey(8rem);
+    opacity: 0;
+}
+
 header{
     width: 100%;
     padding: 10px 25px 10px 0;
