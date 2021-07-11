@@ -1,33 +1,32 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
 
-
-@font-face{
-	src:url('../fonts/OpenSans-Light.ttf');
-	font-family: "Open Sans";
+@font-face {
+    src: url("../fonts/OpenSans-Light.ttf");
+    font-family: "Open Sans";
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-	font-family: "Open Sans";
+    font-family: "Open Sans";
     outline: none;
 }
 
-:root{
+:root {
     --bg-color: rgba(250, 162, 243, 0.9);
 }
 
-body{
+body {
     height: 100%;
 }
 
-h1{
+h1 {
     color: rgba(0, 0, 0, 0.7);
 }
 
-.container-wrapper{
+.container-wrapper {
     width: 100%;
     max-width: 1224px;
     margin: 0 auto;
@@ -36,47 +35,55 @@ h1{
     position: relative;
 }
 
-.section{
+.section {
     transition: transform 1s, opacity 1s;
 }
 
-.section--hidden{
+.section--hidden {
     transform: translatey(8rem);
     opacity: 0;
 }
 
-header{
+header {
     width: 100%;
-    padding: 10px 25px 10px 0;
+    padding: 0 25px 0 0;
     background-color: var(--bg-color);
     display: flex;
     justify-content: space-between;
-    position: absolute;
     z-index: 10;
+    transition: all 0.5s;
+    position: absolute;
+    height: 60px;
 }
 
-header.sticky{
+header.sticky {
     position: fixed;
     max-width: 1224px;
     margin: 0 auto;
     overflow-x: hidden;
 }
 
-header h1{
+header h1 {
     font-family: "Open Sans";
-    font-family: 'Alex Brush', cursive;
+    font-family: "Alex Brush", cursive;
     font-size: 40px;
     font-weight: 200;
 }
 
-header .logo{
+header .logo {
     margin-left: 50px;
+    display: flex;
+    align-items: center;
 }
 
-.banner{
+header h1.hidden-h1 {
+    display: none;
+}
+
+.banner {
     width: 100%;
     height: 600px;
-    background-image: url('../images/banner.jpeg');
+    background-image: url("../images/banner.jpeg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -84,7 +91,7 @@ header .logo{
     align-items: center;
 }
 
-.lista{
+.lista {
     margin-left: 10%;
     background-color: rgba(0, 0, 0, 0.4);
     padding: 40px 10px 10px 20px;
@@ -93,134 +100,124 @@ header .logo{
     border-radius: 20px;
 }
 
-.lista ul{
+.lista ul {
     list-style-type: none;
 }
 
-.lista ul li{
+.lista ul li {
     color: white;
     margin-bottom: 18px;
 }
 
 /*footer*/
 
-.copy{
+.copy {
     width: 100%;
     padding: 20px;
     background-color: var(--bg-color);
 }
 
-.copy p{
+.copy p {
     text-align: center;
     color: black;
 }
 
-
 /*responsive*/
-@media screen and (max-width: 901px){
-    .lista{
+@media screen and (max-width: 901px) {
+    .lista {
         width: 60%;
     }
-    .more{
+    .more {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .more > #map{
+    .more > #map {
         width: 80%;
         margin: 20px 0 50px 0;
     }
-    .more .about{
+    .more .about {
         padding-top: 0px;
         margin-bottom: 3%;
         width: 100%;
         min-width: 80%;
     }
-    .more .about p{
+    .more .about p {
         width: 100%;
         max-width: 60%;
         text-align: justify;
     }
 }
 
-@media screen and (max-width: 853px){
-    .text{
+@media screen and (max-width: 853px) {
+    .text {
         margin: 5% 0;
     }
-    .container-wrapper .text h1{
+    .container-wrapper .text h1 {
         margin-bottom: 0px;
         margin-bottom: 2%;
     }
-    .album-3d >.body >.box span{
-        transform: rotateY(calc(var(--i)*60deg)) translateZ(200px);
+    .album-3d > .body > .box span {
+        transform: rotateY(calc(var(--i) * 60deg)) translateZ(200px);
     }
 }
 
-@media screen and (max-width: 621px){
-    .banner{
-        align-items: center;
-        justify-content: center;
-        height: auto;
-    }
-    .lista{
-        margin-top: 100px; 
-        margin: 0;
-        width: 80%;
-    }
-    .icon img{
-        width: 50%;
-    }
-    .more .about p{
-        max-width: 80%;
-    }
-}
-
-@media screen and (max-width: 582px){
-    .hair{
+@media screen and (max-width: 582px) {
+    .hair {
         margin-bottom: 2%;
     }
-    .container-wrapper > .services > .hair >p {
+    .container-wrapper > .services > .hair > p {
         padding: 10px 10px;
     }
-    article.text p{
+    article.text p {
         max-width: 90%;
     }
-    section.produtos p{
+    section.produtos p {
         max-width: 90%;
     }
 
-    .container-wrapper > .fotos > p{
+    .container-wrapper > .fotos > p {
         max-width: 90%;
     }
-    .more .about P{
+    .more .about P {
         max-width: 90%;
     }
 }
 
-@media screen and (max-width: 432px){
-    .hair{
+@media screen and (max-width: 432px) {
+    .hair {
         margin-bottom: 2%;
     }
-    .banner{
+    .banner {
         height: 400px;
     }
-    .more > #map{
+    .more > #map {
         width: 100%;
         margin: 20px 0 50px 0;
     }
 }
 
-@media screen and (max-width: 432px){
-    .album-3d >.body >.box span{
-        transform: rotateY(calc(var(--i)*50deg)) translateZ(140px);
+@media screen and (max-width: 432px) {
+    .album-3d > .body > .box span {
+        transform: rotateY(calc(var(--i) * 50deg)) translateZ(140px);
     }
 
-    .album-3d >.body >.box span img{
+    .album-3d > .body > .box span img {
         height: 70%;
         width: 60%;
     }
 
-    .album-3d >.body >.box span img.none{
+    .album-3d > .body > .box span img.none {
         display: none;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    header .logo h1 {
+        display: none;
+    }
+
+    header h1.hidden-h1 {
+        display: block;
     }
 }

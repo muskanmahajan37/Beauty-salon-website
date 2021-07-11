@@ -1,175 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Espaço Kelly Oliveira</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/menu.css">
-    <link rel="stylesheet" href="./css/3d.css">
-    <link rel="stylesheet" href="./css/produtos.css">
-    <link rel="stylesheet" href="./css/contato.css">
-    <link rel="stylesheet" href="./css/serviços.css">
-    <link rel="stylesheet" href="./css/contato.css">
-</head>
-<body>
-    <div class="container-wrapper">
-        <header>
-            <div class="container-wrapper">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Espaço Kelly Oliveira</title>
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/menu.css" />
+        <link rel="stylesheet" href="./css/3d.css" />
+        <link rel="stylesheet" href="./css/produtos.css" />
+        <link rel="stylesheet" href="./css/contato.css" />
+        <link rel="stylesheet" href="./css/serviços.css" />
+        <link rel="stylesheet" href="./css/contato.css" />
+    </head>
+    <body>
+        <div class="container-wrapper">
+            <header>
                 <div class="logo">
                     <h1>Espaço Kelly Oliveira</h1>
-                </div><!--logo-->
-                <nav class="desktop-menu nav__links">
-                    <ul>
-                        <li><a class="nav__link" href="#">Home</a></li> 
-                        <li><a class="nav__link" href="#section--1">Serviços</a></li>
-                        <li><a class="nav__link" href="#section--2">Produtos</a></li>
-                        <li><a class="nav__link" href="#section--3">Sobre</a></li>
-                        <li><a class="nav__link" href="#section--4">Contato</a></li>
-                    </ul>
-                </nav><!--desktop-->
-                <nav id="hamburguer">
-                    <ul class="nav-ul" id="nav-ul"> 
-                        <li><a href="">Home</a></li> 
-                        <li><a href="">Serviços</a></li>
-                        <li><a href="">Produtos</a></li>
-                        <li><a href="">Sobre</a></li>
-                        <li><a href="">Contato</a></li>
-                    </ul>
-                </nav><!--desktop-->
-            </div><!--container-wrapper-->
-        </header>
-    </div>
-    <div class="wrapper">
-        <div class="container-wrapper">
-            <section class="banner">
-                <div class="lista">
-                    <ul>
-                        <li>With a selection of hair blow</li>
-                        <li>Lorem ipsum silor domor amet</li>
-                        <li>Lorem ipsum silor domor amet</li>
-                        <li>Lorem ipsum silor domor amet</li>
-                        <li>Lorem ipsum silor domor amet</li>
-                    </ul>
-                </div><!--list-->
-            </section><!--banner-->
-        </div><!--container-wrapper-->
-    
-        <div class="section" id="section--1">
-            <div class="container-wrapper">
-                <article class="text">
-                    <h1>Our work</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie.</p>
-                </article>
-            </div><!--container-wrapper-->
-        
-            <div class="container-wrapper">
-                <section class="services">
-                    <div class="hair n1">
-                        <h1>HAIR HYDRATION</h1>
-                        <p>With a selection of hair blow dryers, you’ll find the perfect tool for creating gorgeous salon styles.</p>
-                    </div>
-                    <div class="hair n2">
-                        <h1>HAIR COLORING</h1>
-                        <p>With a selection of hair blow dryers, you’ll find the perfect tool for creating gorgeous salon styles.</p>
-                    </div>
-                    <div class="hair n3">
-                        <h1>BLOW DRYERS</h1>
-                        <p>With a selection of hair blow dryers, you’ll find the perfect tool for creating gorgeous salon styles.</p>
-                    </div>
-                    <div class="hair n4">
-                        <h1>HAIR BRUSHES</h1>
-                        <p>With a selection of hair blow dryers, you’ll find the perfect tool for creating gorgeous salon styles.</p>
-                    </div>
-                </section><!--services-->
-            </div><!--container-wrapper-->
-        </div>
-    
-        <div class="container-wrapper section" id="section--2">
-            <section class="produtos">
-                <h1>Our products</h1>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore, Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore</p>
-                <div class="vendas">
-                    <div class="item n1">
-                        <div class="img n1"> </div>
-    
-                        <p>shampoo tresemmé</p>
-                        <h2>$20.99</h2>
-                    </div><!--item01-->
-    
-                    <div class="item n2">
-                        <div class="img n2"></div>
-                        <p>Hairbrush</p>
-                        <h2>$50.00</h2>
-                    </div><!--item 02-->
-                    <div class="item n3">
-                        <div class="img n3"></div>
-    
-                        <p>Mondial Style SC-11</p>
-                        <h2>$79.90</h2>
-                    </div>
-                    <div class="item n4">
-                        <div class="img n4"></div>
-                        <p>Coconut Oil</p>
-                        <h2>$29.90</h2>
-                    </div>
+                    <h1 class="hidden-h1">Kelly Oliveira</h1>
                 </div>
-            </section><!--produtos-->
+                <!--logo-->
+                <nav>
+                    <input type="checkbox" id="check" />
+                    <label for="check" class="checkbtn">
+                        <div id="hamburguer">
+                            <i class="fas fa-bars"> </i>
+                        </div>
+                    </label>
+                    <ul class="hidden-menu nav__links">
+                        <li><a class="nav__link" href="#banner">Home</a></li>
+                        <li>
+                            <a class="nav__link" href="#section--1">About</a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="#section--2">Products</a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="#section--3">Album</a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="#section--4">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
         </div>
-    
-        <div class="section" id="section--3">
+        <div class="wrapper">
             <div class="container-wrapper">
-                <div class="fotos">
-                    <h1>Our clients</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-                </div><!--fotos-->
+                <section class="banner" id="banner">
+                    <div class="lista">
+                        <ul>
+                            <li>With a selection of hair blow</li>
+                            <li>Lorem ipsum silor domor amet</li>
+                            <li>Lorem ipsum silor domor amet</li>
+                            <li>Lorem ipsum silor domor amet</li>
+                            <li>Lorem ipsum silor domor amet</li>
+                        </ul>
+                    </div>
+                    <!--list-->
+                </section>
+                <!--banner-->
             </div>
-        
-            <div class="album-3d">
-                <div class="body">
-                    <div class="box">
-                        <span style="--i:1"><img src="./album/foto-1.png" class="none"></span>
-                        <span style="--i:2"><img src="./album/foto-2.png"></span>
-                        <span style="--i:3"><img src="./album/foto-3.png"></span>
-                        <span style="--i:4"><img src="./album/foto-4.png"></span>
-                        <span style="--i:5"><img src="./album/foto-5.png"></span>
-                        <span style="--i:6"><img src="./album/foto-6.png"></span>
-                        <span style="--i:7"><img src="./album/foto-7.png"></span>
-                        <span style="--i:8"><img src="./album/foto-8.png"></span>
+            <!--container-wrapper-->
+
+            <div class="section" id="section--1">
+                <div class="container-wrapper">
+                    <article class="text">
+                        <h1>Our work</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut
+                            laoreet dolore magna aliquam erat volutpat. Ut wisi
+                            enim ad minim veniam, quis nostrud exerci tation
+                            ullamcorper suscipit lobortis nisl ut aliquip ex ea
+                            commodo consequat. Duis autem vel eum iriure dolor
+                            in hendrerit in vulputate velit esse molestie.
+                        </p>
+                    </article>
+                </div>
+                <!--container-wrapper-->
+
+                <div class="container-wrapper">
+                    <section class="services">
+                        <div class="hair n1">
+                            <h1>HAIR HYDRATION</h1>
+                            <p>
+                                With a selection of hair blow dryers, you’ll
+                                find the perfect tool for creating gorgeous
+                                salon styles.
+                            </p>
+                        </div>
+                        <div class="hair n2">
+                            <h1>HAIR COLORING</h1>
+                            <p>
+                                With a selection of hair blow dryers, you’ll
+                                find the perfect tool for creating gorgeous
+                                salon styles.
+                            </p>
+                        </div>
+                        <div class="hair n3">
+                            <h1>BLOW DRYERS</h1>
+                            <p>
+                                With a selection of hair blow dryers, you’ll
+                                find the perfect tool for creating gorgeous
+                                salon styles.
+                            </p>
+                        </div>
+                        <div class="hair n4">
+                            <h1>HAIR BRUSHES</h1>
+                            <p>
+                                With a selection of hair blow dryers, you’ll
+                                find the perfect tool for creating gorgeous
+                                salon styles.
+                            </p>
+                        </div>
+                    </section>
+                    <!--services-->
+                </div>
+                <!--container-wrapper-->
+            </div>
+
+            <div class="container-wrapper section" id="section--2">
+                <section class="produtos">
+                    <h1>Our products</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                        dolore, Lorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit, sed diam nonummy nibh euismod tincidunt
+                        ut laoreet dolore
+                    </p>
+                    <div class="vendas">
+                        <div class="item n1">
+                            <div class="img n1"></div>
+
+                            <p>shampoo tresemmé</p>
+                            <h2>$20.99</h2>
+                        </div>
+                        <!--item01-->
+
+                        <div class="item n2">
+                            <div class="img n2"></div>
+                            <p>Hairbrush</p>
+                            <h2>$50.00</h2>
+                        </div>
+                        <!--item 02-->
+                        <div class="item n3">
+                            <div class="img n3"></div>
+
+                            <p>Mondial Style SC-11</p>
+                            <h2>$79.90</h2>
+                        </div>
+                        <div class="item n4">
+                            <div class="img n4"></div>
+                            <p>Coconut Oil</p>
+                            <h2>$29.90</h2>
+                        </div>
+                    </div>
+                </section>
+                <!--produtos-->
+            </div>
+
+            <div class="section" id="section--3">
+                <div class="container-wrapper">
+                    <div class="fotos">
+                        <h1>Our clients</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut
+                            laoreet dolore magna aliquam erat volutpat. Ut wisi
+                            enim ad minim veniam, quis nostrud exerci tation
+                            ullamcorper suscipit lobortis nisl ut aliquip ex ea
+                            commodo consequat.
+                        </p>
+                    </div>
+                    <!--fotos-->
+                </div>
+
+                <div class="album-3d">
+                    <div class="body">
+                        <div class="box">
+                            <span style="--i: 1"
+                                ><img src="./album/foto-1.png" class="none"
+                            /></span>
+                            <span style="--i: 2"
+                                ><img src="./album/foto-2.png"
+                            /></span>
+                            <span style="--i: 3"
+                                ><img src="./album/foto-3.png"
+                            /></span>
+                            <span style="--i: 4"
+                                ><img src="./album/foto-4.png"
+                            /></span>
+                            <span style="--i: 5"
+                                ><img src="./album/foto-5.png"
+                            /></span>
+                            <span style="--i: 6"
+                                ><img src="./album/foto-6.png"
+                            /></span>
+                            <span style="--i: 7"
+                                ><img src="./album/foto-7.png"
+                            /></span>
+                            <span style="--i: 8"
+                                ><img src="./album/foto-8.png"
+                            /></span>
+                        </div>
                     </div>
                 </div>
-            </div><!--album-3d-->
-        </div>
-    
-        <div class="container-wrapper section" id="section--4">
-            <div class="contact">
-                <h1>Contact us</h1>
-                <div class="icones">
-                    <a href="#" target="blank"><div class="icon n1"><img src="contact/instagram.png"></div></a>
-                    <a href="#" target="blank"><div class="icon n1"><img src="contact/facebook.png"></div></a>
-                    <a href="#" target="blank"><div class="icon n1"><img src="contact/whatsapp.png"></div></a>
-                    <a href="#" target="blank"><div class="icon n1"><img src="contact/youtube.png"></div></a>
-                </div>
-                <div class="more">
-                    <div id="map"></div><!--map-->
-                    <div class="about">
-                        <h2>More informations</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit </p>
+                <!--album-3d-->
+            </div>
+
+            <div class="container-wrapper section" id="section--4">
+                <div class="contact">
+                    <h1>Contact us</h1>
+                    <div class="icones">
+                        <a href="#" target="blank"
+                            ><div class="icon n1">
+                                <img src="contact/instagram.png" /></div
+                        ></a>
+                        <a href="#" target="blank"
+                            ><div class="icon n1">
+                                <img src="contact/facebook.png" /></div
+                        ></a>
+                        <a href="#" target="blank"
+                            ><div class="icon n1">
+                                <img src="contact/whatsapp.png" /></div
+                        ></a>
+                        <a href="#" target="blank"
+                            ><div class="icon n1">
+                                <img src="contact/youtube.png" /></div
+                        ></a>
                     </div>
-                </div><!--more-->
-            </div><!--contact-->
-        </div><!--container-wrapper-->
-    
-         <div class="container-wrapper">
-            <footer class="copy">
-                <strong><p>Copyright &copy; 2020 - by Victor Lira <br /></strong>
-            </footer>
+                    <div class="more">
+                        <div id="map"></div>
+                        <!--map-->
+                        <div class="about">
+                            <h2>More informations</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer
+                                adipiscing elit, sed diam nonummy nibh euismod
+                                tincidunt ut laoreet dolore magna aliquam erat
+                                volutpat. Ut wisi enim ad minim veniam, quis
+                                nostrud exerci tation ullamcorper suscipit
+                                lobortis nisl ut aliquip ex ea commodo
+                                consequat. Duis autem vel eum iriure dolor in
+                                hendrerit
+                            </p>
+                        </div>
+                    </div>
+                    <!--more-->
+                </div>
+                <!--contact-->
+            </div>
+            <!--container-wrapper-->
+
+            <div class="container-wrapper">
+                <footer class="copy">
+                    <strong
+                        ><p>Copyright &copy; 2020 - by Victor Lira <br /></p
+                    ></strong>
+                </footer>
+            </div>
         </div>
-    </div>
-    <script src="main.js"></script>
-    <script src="map.js"></script>
-    <script defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHM_BG04iU6Vonu7t8RCvk4QDuIGsDqyc&callback=initMap">
-    </script>
-</body>
+        <script src="main.js"></script>
+        <script src="map.js"></script>
+        <script
+            defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHM_BG04iU6Vonu7t8RCvk4QDuIGsDqyc&callback=initMap"
+        ></script>
+        <script
+            src="https://kit.fontawesome.com/545ea23f83.js"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>

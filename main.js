@@ -1,13 +1,10 @@
-const hamburguer = document.getElementById("hamburguer");
-const navUL = document.getElementById("nav-ul");
 const banner = document.querySelector(".banner");
 const header = document.querySelector("header");
 const navigation = document.querySelector(".nav__links");
 const allSections = document.querySelectorAll(".section");
-
-hamburguer.addEventListener("click", () => {
-    navUL.classList.toggle("show");
-});
+const menu = document.querySelector(".hidden-menu");
+const menuIcon = document.querySelector("#hamburguer");
+const headeMobile = document.querySelector("header");
 
 //smooth scroth
 navigation.addEventListener("click", function (e) {
@@ -34,19 +31,12 @@ allSections.forEach((section) => {
     section.classList.add("section--hidden");
 });
 
-//sticky menu
-const addStickClass = function (entries, observer) {
-    const [entry] = entries;
-    if (entry.isIntersecting) {
-        header.classList.remove("sticky");
-    }
-    if (!entry.isIntersecting) {
-        header.classList.add("sticky");
-    }
-};
-
-const bannerOberver = new IntersectionObserver(addStickClass, {
-    root: null,
-    threshold: 0,
+//menu mobile
+menu.addEventListener("click", function (e) {
+    menu.classList.remove("display-menu");
 });
-bannerOberver.observe(banner);
+
+menuIcon.addEventListener("click", function () {
+    menu.classList.toggle("display-menu");
+    headeMobile.classList.toggle("mobile");
+});

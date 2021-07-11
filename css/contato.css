@@ -1,28 +1,25 @@
-.contact{
+.contact {
     padding-top: 5%;
     width: 100%;
 }
 
-.contact h1{
+.contact h1 {
     text-align: center;
     padding-top: 2%;
-	font-family: 'poppins', sans-serif;
+    font-family: "poppins", sans-serif;
 }
 
-.icones{
-    margin:20px 0 30px 0 ;
+.icones {
+    margin: 20px 0 30px 0;
     width: 100%;
     padding: 10px;
     background-color: var(--bg-color);
     display: flex;
     justify-content: space-evenly;
+    border-radius: 6px;
 }
 
-.icon img{
-    width: 70%;
-}
-
-.icon{
+.icon {
     width: 10%;
     height: 100%;
     cursor: pointer;
@@ -31,17 +28,21 @@
     align-items: center;
 }
 
-.icon.n1{
+.icon.n1 {
     height: 100%;
     width: 100%;
 }
 
-.more{
+.icon img {
+    width: 60%;
+}
+
+.more {
     display: flex;
     padding: 50px 0 50px 0;
 }
 
-#map{
+#map {
     height: 300px;
     width: 50%;
     border: 10px solid black;
@@ -49,22 +50,40 @@
     box-shadow: 5px 4px 10px 1px #3f3f3f;
     padding: 20px;
     border: 5px solid pink;
-	background-clip:padding-box;
+    background-clip: padding-box;
 }
 
-.about{
+.about {
     width: 50%;
-    padding-top:50px;
-
+    padding-top: 50px;
 }
 
-.about h2{
+.about h2 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.about p{
+.about p {
     width: 400px;
     text-align: justify;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 621px) {
+    .banner {
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+    .lista {
+        margin-top: 100px;
+        margin: 0;
+        width: 80%;
+    }
+    .icon img {
+        width: 40%;
+    }
+    .more .about p {
+        max-width: 80%;
+    }
 }
