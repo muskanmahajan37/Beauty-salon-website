@@ -1,0 +1,88 @@
+.products {
+    width: 100%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        text-align: center;
+        margin-bottom: 1%;
+        font-family: "poppins", sans-serif;
+    }
+
+    p {
+        margin: 0 auto;
+        text-align: justify;
+        max-width: 70%;
+    }
+
+    .sales {
+        margin-top: 5%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-bottom: 10%;
+
+        .item {
+            padding: 10px;
+            width: 20%;
+            min-width: 300px;
+            margin-top: 2%;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            border: 1px dotted black;
+
+            .img {
+                width: 100%;
+                height: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                transition: all 0.4s ease-in;
+                &:hover {
+                    transform: scale(1.2);
+                }
+
+                &.n1 {
+                    background-image: url("../images/item-n1.png");
+                    background-size: 100%;
+                }
+
+                &.n2 {
+                    background-image: url("../images/item-n2.png");
+                    background-size: 80%;
+                }
+
+                &.n3 {
+                    transform: scale(1);
+                    background-image: url("../images/item-n3.png");
+                    background-size: 60%;
+                }
+
+                &.n4 {
+                    background-image: url("../images/item-n4.png");
+                    background-size: 80%;
+                }
+            }
+
+            h2 {
+                background-color: rgba(0, 0, 0, 0.7);
+                border-radius: 2rem;
+                padding: 0 10px;
+                color: white;
+                &:hover {
+                    color: yellow;
+                }
+            }
+        }
+    }
+}
+
+section {
+    &.products p {
+        max-width: 90%;
+    }
+}

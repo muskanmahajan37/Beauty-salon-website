@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
+@import "./services";
+@import "./products";
+@import "./3d-slider";
+@import "./contact";
+@import "./menu";
+@import './banner';
+@import './header';
+@import './footer';
+
+@font-face {
+    src: url("../fonts/OpenSans-Light.ttf");
+    font-family: "Open Sans";
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+    outline: none;
+}
+
+:root {
+    --bg-color: rgba(250, 162, 243, 0.9);
+}
+
+label {
+    &.logo {
+        color: white;
+        font-size: 35px;
+        line-height: 80px;
+        padding: 0 100px;
+        font-weight: bold;
+    }
+}
+
+body {
+    height: 100%;
+}
+
+h1 {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.container-wrapper {
+    width: 100%;
+    max-width: 1224px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.section {
+    transition: transform 1s, opacity 1s;
+}
+
+.section--hidden {
+    transform: translatey(8rem);
+    opacity: 0;
+}
+
+
+
+

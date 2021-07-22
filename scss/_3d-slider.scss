@@ -1,0 +1,107 @@
+.pictures {
+    width: 100%;
+    padding-bottom: 5%;
+    h1 {
+        text-align: center;
+        padding-top: 3%;
+        margin-bottom: 1%;
+        font-family: "poppins", sans-serif;
+    }
+    p {
+        max-width: 80%;
+        text-align: justify;
+        margin: 0 auto;
+    }
+}
+
+.album-3d {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20px;
+        min-height: 400px;
+        width: 100%;
+        max-width: 1224px;
+        background-color: rgba(0, 0, 0, 0.1);
+        box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.3);
+        .box {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            transform-style: preserve-3d;
+            animation: animate 40s linear infinite;
+            span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transform-origin: center;
+                transform-style: preserve-3d;
+                transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+                /*transform: rotateY(calc(var(--i)*60deg)) translateZ(200px);*/
+                -webkit-box-reflect: below 0px
+                    linear-gradiente(transparent, transparent, #0004);
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+@keyframes animate {
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100% {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+@media screen and (max-width: 432px) {
+    .album-3d {
+        .body {
+            .box {
+                span {
+                    transform: rotateY(calc(var(--i) * 50deg)) translateZ(140px);
+                    img {
+                        height: 70%;
+                        width: 60%;
+                        .none {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 853px) {
+    .album-3d {
+        .body {
+            .box {
+                span {
+                    transform: rotateY(calc(var(--i) * 60deg)) translateZ(200px);
+                }
+            }
+        }
+    }
+}
+
+.pictures {
+    p {
+        max-width: 90%;
+    }
+}

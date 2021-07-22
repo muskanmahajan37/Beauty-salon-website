@@ -1,0 +1,121 @@
+.text {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+
+    h1 {
+        margin-top: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+        font-family: "poppins", sans-serif;
+    }
+    p {
+        max-width: 70%;
+        text-align: justify;
+        margin: 0 auto;
+    }
+}
+
+.services {
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .hair {
+        width: 23%;
+        min-width: 300px;
+        margin-top: 2%;
+        border: 1px solid black;
+        box-shadow: 5px 5px 10px 0px #000;
+        cursor: pointer;
+        transition: all 0.4s ease-in;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &.n1 {
+            background-image: url("../images/coconut.png");
+        }
+
+        &.n2 {
+            background-image: url("../images/img-2.png");
+            &:hover {
+                background-size: 60%;
+            }
+        }
+
+        &.n3 {
+            background-image: url("../images/img-3.png");
+        }
+
+        &.n4 {
+            background-image: url("../images/img-4.png");
+        }
+
+        &:hover {
+            transform: scale(1.1);
+            background-size: 150%;
+        }
+
+        p {
+            padding: 10px 10px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.4);
+            text-align: justify;
+        }
+
+        h1 {
+            text-align: center;
+            color: whitesmoke;
+            padding-bottom: 5%;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        h3 {
+            text-align: center;
+            text-decoration: underline;
+            color: whitesmoke;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 853px) {
+    .text {
+        margin: 5% 0;
+        h1 {
+            margin-bottom: 0px;
+            margin-bottom: 2%;
+        }
+    }
+}
+
+@media screen and (max-width: 582px) {
+    .services {
+        .hair {
+            margin-bottom: 2%;
+            p {
+                padding: 10px 10px;
+            }
+        }
+    }
+
+    article {
+        &.text p {
+            max-width: 90%;
+        }
+    }
+}
+
+@media screen and (max-width: 432px) {
+    .hair {
+        margin-bottom: 2%;
+    }
+}

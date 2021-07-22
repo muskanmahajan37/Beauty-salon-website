@@ -1,0 +1,58 @@
+.banner {
+    width: 100%;
+    height: 600px;
+    background-image: url("../images/banner.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .list {
+        margin-left: 10%;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 40px 10px 10px 20px;
+        width: 40%;
+        height: 300px;
+        border-radius: 20px;
+        ul {
+            list-style-type: none;
+            li {
+                color: white;
+                margin-bottom: 18px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 901px) {
+    .banner {
+        .list {
+            width: 60%;
+        }
+    }
+}
+
+@media screen and (max-width: 732px) {
+    .banner {
+        .list {
+            width: 70%;
+        }
+    }
+}
+
+@media screen and (max-width: 562px) {
+    .banner {
+        justify-content: center;
+        .list {
+            width: 90%;
+            margin: 0;
+            height: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 432px) {
+    .banner {
+        height: 400px;
+    }
+}

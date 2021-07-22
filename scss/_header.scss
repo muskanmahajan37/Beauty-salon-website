@@ -1,0 +1,45 @@
+header {
+    width: 100%;
+    padding: 0 25px 0 0;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    transition: all 0.5s;
+    position: absolute;
+    height: 60px;
+    &.sticky {
+        position: fixed;
+        max-width: 1224px;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+
+    h1 {
+        font-family: "Open Sans";
+        font-family: "Alex Brush", cursive;
+        font-size: 40px;
+        font-weight: 200;
+    }
+
+    h1.hidden-h1 {
+        display: none;
+    }
+
+    .logo {
+        line-height: 60px;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    header {
+        .logo {
+            h1 {
+                display: none;
+                &.hidden-h1 {
+                    display: block;
+                }
+            }
+        }
+    }
+}
